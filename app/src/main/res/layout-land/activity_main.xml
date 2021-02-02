@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/include4"
+        layout="@layout/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="@drawable/buttonshape"
+        tools:layout_editor_absoluteY="-5dp"></include>
+
+    <Button
+        android:id="@+id/setInvoiceId"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="Set Invoice Number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/getTodayCardUPISales"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createInvoiceID" />
+
+    <Button
+        android:id="@+id/btCredit"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="credit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btOpenPdfList"
+        app:layout_constraintTop_toBottomOf="@+id/getTodaySalesId" />
+
+    <Button
+        android:id="@+id/btOpenPdfList"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="Get Invoices List"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btCredit"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/getTodayCardUPISales"
+        app:layout_constraintTop_toBottomOf="@+id/btFromToSale" />
+
+    <Button
+        android:id="@+id/btFromToSale"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="View Settlements"
+        app:layout_constraintBottom_toTopOf="@+id/btOpenPdfList"
+        app:layout_constraintEnd_toStartOf="@+id/getTodaySalesId"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btRemoveSale"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <Button
+        android:id="@+id/getTodayCardUPISales"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="Get Today's Card/UPI Sale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btOpenPdfList"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/setInvoiceId"
+        app:layout_constraintTop_toBottomOf="@+id/btRemoveSale" />
+
+    <Button
+        android:id="@+id/btRemoveSale"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="Remove Sale"
+        app:layout_constraintBottom_toTopOf="@+id/getTodayCardUPISales"
+        app:layout_constraintEnd_toStartOf="@+id/btFromToSale"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/createInvoiceID"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <Button
+        android:id="@+id/createInvoiceID"
+        android:layout_width="146dp"
+        android:layout_height="118dp"
+        android:background="@drawable/buttonshape"
+        android:text="Create Invoice"
+        app:layout_constraintBottom_toTopOf="@+id/setInvoiceId"
+        app:layout_constraintEnd_toStartOf="@+id/btRemoveSale"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+    <Button
+        android:id="@+id/getTodaySalesId"
+        android:layout_width="143dp"
+        android:layout_height="115dp"
+        android:background="@drawable/buttonshape"
+        android:text="Get Today's Sale"
+        app:layout_constraintBottom_toTopOf="@+id/btCredit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btFromToSale"
+        app:layout_constraintTop_toBottomOf="@+id/include4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

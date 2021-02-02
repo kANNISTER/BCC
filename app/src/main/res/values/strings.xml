@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">BCC</string>
+
+    <string-array name="Payment">
+        <item>--SELECT--</item>
+        <item>Cash</item>
+        <item>Card</item>
+        <item>UPI</item>
+        <item>Shop UPI</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="Product">
+        <item>--SELECT--</item>
+        <item>Shirt</item>
+        <item>T-Shirt</item>
+        <item>Formal Pant</item>
+        <item>Jeans</item>
+        <item>Track Pant</item>
+    </string-array>
+
+    <string-array name="Price">
+        <item>--SELECT--</item>
+        <item>250</item>
+        <item>350</item>
+        <item>550</item>
+        <item>650</item>
+        <item>750</item>
+        <item>850</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1250</item>
+        <item>1350</item>
+        <item>1450</item>
+    </string-array>
+
+    <string-array name="Quantity">
+        <item>--SELECT--</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+</resources>
